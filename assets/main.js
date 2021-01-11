@@ -10,4 +10,4 @@ function createMeteors() {
     }, 2500);
 }
 
-setInterval(createMeteors, 100);
+setInterval(createMeteors, 200);

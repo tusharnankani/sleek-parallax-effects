@@ -55,6 +55,7 @@ header nav {
 header nav .logo {
     max-width: 100px;
     color: #fff;
+    cursor: pointer;
 }
 
 .btn {
@@ -65,6 +66,7 @@ header nav .logo {
 header nav .btn-group .btn {
     font-size: 12px;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .intro-content {
@@ -77,10 +79,24 @@ header nav .btn-group .btn {
     color: #fff;
 }
 
+.intro-content h1 {
+    margin: 20px;
+}
+
 .intro-content .btn {
     display: inline-block;
     margin-top: 15px;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px 40px;
     border: 1px solid #fff;
+    transition: 0.2s all ease;
+}
+
+.intro-content .btn:hover {
+    box-shadow: rgba(255, 255, 255, 0.596) 0 2px 10px ;
+}
+
+footer {
+    position: absolute;
+
 }
