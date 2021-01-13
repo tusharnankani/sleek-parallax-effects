@@ -1,3 +1,4 @@
+// Meteor Creation 
 const animatedSection = document.querySelector('.animated-area');
 
 function createMeteors() {

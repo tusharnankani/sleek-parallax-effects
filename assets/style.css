@@ -51,10 +51,12 @@ header nav {
     align-items: center;
     padding: 20px;
     z-index: 10;
+
     /* for sticky navbar */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
     /* for the nav shine at the bottom */
     /* box-shadow: 0 2px 20px 2px rgba(138, 138, 138, 0.596); */
 }
@@ -107,4 +109,39 @@ footer {
     position: absolute;
     width: 100%;
     height: 100vh;
+}
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(126, 125, 125, 0.034);
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 6px rgba(90,90,90,0.7);
+}
+
+footer {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.5s all ease-in;
+}
+
+footer:hover {
+    opacity: 1;
 }
